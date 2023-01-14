@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap");
+/* ======================= 
+    common styles 
+    ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.btn {
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 20px 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.section-header {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+
+/* ======================= 
+    Header section styles 
+    ======================= */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  width: 100%;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.logo h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+.menu ul {
+  display: flex;
+  gap: 80px;
+}
+.menu li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #424242;
+}
+
+/* ======================= 
+    Header section styles 
+    ======================= */
+.banner-content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.banner-content h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #131313;
+}
+
+.banner-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-top: 30px;
+}
+
+.banner-btn {
+  margin-top: 30px;
+}
+
+.img {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ======================= 
+    Quick Feature section styles 
+    ======================= */
+
+.feature-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+  padding: 25px;
+}
+.feature-image img {
+  width: 342px;
+  height: 342px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding-left: 50px;
+}
+
+#heading-style-1 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #727272;
+}
+
+#heading-style-2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #ff900e;
+}
+
+.feature-description p {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+.feature-btn {
+  margin-top: 30px;
+}
