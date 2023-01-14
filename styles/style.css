@@ -159,7 +159,7 @@ header {
 }
 
 /* ======================= 
-    Quick Feature section styles 
+    Details Feature section styles 
     ======================= */
 .details-features {
   display: grid;
@@ -204,7 +204,7 @@ header {
 }
 .experience-btn {
   position: relative;
-  top: -120px;
+  top: -130px;
   left: -90px;
   padding: 45px 40px;
 }
@@ -214,4 +214,43 @@ header {
   font-size: 65px;
   line-height: 70px;
   color: #ffffff;
+}
+
+/* ======================= 
+    Facts Feature section styles 
+    ======================= */
+
+.facts-section-heading {
+  width: 40%;
+}
+.facts-section-heading p {
+  margin-top: 25px;
+}
+
+.facts-section-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  text-align: center;
+}
+.facts-description {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 45px 35px 60px 35px;
+  margin-bottom: 100px;
+}
+
+.facts-number {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  color: #424242;
+  margin-top: 5px;
+}
+
+.facts-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #727272;
 }
