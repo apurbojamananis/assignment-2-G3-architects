@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap");
 
+.hide {
+  display: none;
+}
+
 /* ======================= 
     common styles 
     ======================= */
@@ -72,6 +76,7 @@ header {
   font-size: 45px;
   line-height: 53px;
   color: #131313;
+  margin-left: 10px;
 }
 .menu ul {
   display: flex;
@@ -125,10 +130,14 @@ header {
 }
 
 .img {
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
   padding-bottom: 50px;
 }
-
+.img img {
+  width: 95%;
+}
 /* ======================= 
     Quick Feature section styles 
     ======================= */
@@ -146,8 +155,10 @@ header {
   padding: 25px;
 }
 .feature-image img {
-  width: 342px;
-  height: 342px;
+  max-width: 342px;
+  width: 100%;
+  max-height: 342px;
+  height: 100%;
 }
 
 .feature-content {
@@ -203,6 +214,7 @@ header {
 .details-features-content-top p {
   width: 85%;
   margin-top: 25px;
+  margin-left: 10px;
 }
 
 .details-features-description {
@@ -224,6 +236,10 @@ header {
   line-height: 23px;
   color: #131313;
 }
+
+.details-features-image img {
+  width: 100%;
+}
 .experience-btn {
   position: relative;
   top: -130px;
@@ -244,6 +260,8 @@ header {
 
 .facts-section-heading {
   width: 40%;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 .facts-section-heading p {
   margin-top: 25px;
@@ -291,6 +309,9 @@ header {
   width: 40%;
   margin: 0 auto;
 }
+.sponsor-heading h2 {
+  padding-top: 50px;
+}
 .sponsor-heading p {
   margin-top: 25px;
 }
@@ -298,11 +319,11 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
-  margin: 50px 0px 100px 0px;
+  margin-top: 50px;
+  padding-bottom: 100px;
 }
 .sponsor-img {
   filter: grayscale(100%);
-  /* margin-top: 50px 0px 100px 0px; */
 }
 
 /* ======================= 
@@ -312,7 +333,7 @@ header {
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 160px;
+  margin-top: 120px;
   padding-bottom: 100px;
 }
 
@@ -394,7 +415,7 @@ textarea {
 .footer-section p {
   font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   color: #424242;
   text-align: center;
