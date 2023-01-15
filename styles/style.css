@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap");
+
 /* ======================= 
     common styles 
     ======================= */
@@ -7,11 +8,7 @@
   padding: 0;
   font-family: "Work Sans", sans-serif;
 }
-.sticky-section {
-  position: sticky;
-  top: 0px;
-  background-color: #fff4e7;
-}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -28,6 +25,16 @@
   text-align: center;
   color: #ffffff;
   border: none;
+}
+
+.banner-btn:hover,
+.feature-btn:hover,
+.contact-btn:hover {
+  outline: 1px solid #ff900e;
+  background-color: #fff;
+  color: #131313;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .section-header {
@@ -59,7 +66,8 @@ header {
   padding: 50px 0px;
 }
 
-.logo h1 {
+.logo h1 a {
+  text-decoration: none;
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
@@ -67,14 +75,28 @@ header {
 }
 .menu ul {
   display: flex;
-  gap: 80px;
+  gap: 40px;
 }
 .menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
   list-style: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   color: #424242;
+  padding: 15px 20px;
+}
+
+.menu li a:hover {
+  background-color: #ff900e;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
 }
 
 /* ======================= 
@@ -238,6 +260,11 @@ header {
   border-radius: 8px;
   padding: 45px 35px 60px 35px;
   margin-bottom: 100px;
+  transition: transform 2s;
+}
+
+.facts-description:hover {
+  transform: rotateY(360deg);
 }
 
 .facts-number {
@@ -270,6 +297,7 @@ header {
 .sponsor-images {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
   margin: 50px 0px 100px 0px;
 }
 .sponsor-img {
@@ -277,6 +305,86 @@ header {
   /* margin-top: 50px 0px 100px 0px; */
 }
 
+/* ======================= 
+    contact section styles 
+    ======================= */
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 160px;
+  padding-bottom: 100px;
+}
+
+.contact-content {
+  padding: 30px 50px 30px 30px;
+}
+.contact-description {
+  margin-top: 25px;
+}
+
+.contact-content p span {
+  color: #131313;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+.social-contact {
+  margin-top: 30px;
+}
+
+.social-contact p {
+  margin-top: 10px;
+}
+
+.social-link {
+  margin-top: 25px;
+}
+
+.social-icon-1,
+.social-icon-2,
+.social-icon-3 {
+  color: #ff900e;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.social-icon-2,
+.social-icon-3 {
+  margin-left: 20px;
+}
+/* contact form */
+
+.contact-form {
+  background-color: #fff4e7;
+  padding: 30px 50px 30px 30px;
+  width: 70%;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.contact-info {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+}
+
+.contact-info input,
+textarea {
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.contact-email,
+.contact-message {
+  grid-column: span 2;
+}
+/* ======================= 
+    Footer section styles 
+    ======================= */
 .footer-section {
   background: #fff4e7;
   border-radius: 8px;
@@ -292,3 +400,7 @@ header {
   text-align: center;
   padding: 50px 0px;
 }
+
+/* ======================= 
+    styles end here 
+    ======================= */

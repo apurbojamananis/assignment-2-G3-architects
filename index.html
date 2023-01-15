@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/reponsive.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>G3-Architect</title>
   </head>
   <body>
@@ -15,17 +23,17 @@
       <!-- ========================
         navbar section start 
         ======================== -->
-      <nav class="container sticky-section">
+      <nav class="container">
         <div class="menu-bar">
           <div class="logo">
-            <h1>G3 Architects</h1>
+            <h1><a href="#">G3 Architects</a></h1>
           </div>
           <div class="menu">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Login</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
             </ul>
           </div>
         </div>
@@ -171,12 +179,12 @@
           <div class="facts-section-content">
             <div class="facts-description">
               <img src="./images/icons/ribon.png" alt="" />
-              <p class="facts-number">54</p>
+              <p class="facts-number">69</p>
               <p class="facts-title">Awards Winnings</p>
             </div>
             <div class="facts-description">
               <img src="./images/icons/projects.png" alt="" />
-              <p class="facts-number">1458</p>
+              <p class="facts-number">1,580</p>
               <p class="facts-title">Project Finished</p>
             </div>
             <div class="facts-description">
@@ -186,7 +194,7 @@
             </div>
             <div class="facts-description">
               <img src="./images/icons/email.png" alt="" />
-              <p class="facts-number">22578</p>
+              <p class="facts-number">25,577</p>
               <p class="facts-title">Email Send</p>
             </div>
           </div>
@@ -241,11 +249,70 @@
         footer section start 
         ======================== -->
     <footer>
+      <!-- ========================
+        contact section start 
+        ======================== -->
+      <section class="container">
+        <div class="contact">
+          <div class="contact-content">
+            <h2 class="section-header">Let’s Start New Project.</h2>
+            <p class="paragraph contact-description">
+              Information Architecture Help Organize Content Overall So It’s
+              Easy To Find And Use. Imagine A Storeroom Filled To The Brim With
+              Things Let’s Say These Things Are All Related To Sports Equipment,
+              Like Bicycles, Surfboards, Skateboards , And Tennis Rackets.
+            </p>
+            <div class="social-contact">
+              <p class="paragraph"><span>PHONE:</span> +0123456789</p>
+              <p class="paragraph"><span>SKYPE:</span> architect_support_1</p>
+              <p class="paragraph"><span>EMAIL:</span> info@email.com</p>
+            </div>
+            <div class="social-link">
+              <i class="fa-brands fa-square-facebook social-icon-1"></i>
+              <i class="fa-brands fa-square-twitter social-icon-2"></i>
+              <i class="fa-brands fa-linkedin social-icon-3"></i>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h2 class="section-header">Let’s Connect</h2>
+            <form action="" class="contact-info">
+              <input
+                type="text"
+                placeholder="Name*"
+                class="contact-name"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Phone*"
+                class="contact-number"
+              />
+              <input type="email" placeholder="Email*" class="contact-email" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message*"
+                class="contact-message"
+              ></textarea>
+              <button class="btn contact-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ========================
+        rights section start 
+        ======================== -->
       <section class="container">
         <div class="footer-section">
           <p>All rights reserved copyright@2023 startup landing page design</p>
         </div>
       </section>
     </footer>
+
+    <!-- ========================
+        all section end here
+        ======================== -->
   </body>
 </html>
